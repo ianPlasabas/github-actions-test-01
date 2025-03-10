@@ -15,6 +15,7 @@ jobs:
             - name: Run Test
               run: npm test
     job-02:
+        needs: job-01
         runs-on: ubuntu-latest
         steps:
             - name: Clone repo
